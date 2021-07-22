@@ -19,4 +19,8 @@ module.exports = {
         config.node.fs = "empty";
         return config
     }
+    publicRuntimeConfig: {
+        // Will be available on both server and client
+        staticFolder: '/static',
+    }
 };
