@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
+      - name: Build app
+        with:
+          app_build_command: 'next build'
       - uses: actions/checkout@v2
         with:
           submodules: true
